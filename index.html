@@ -1,0 +1,268 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Blog sobre Enrolados</title>
+
+    <style>
+        body {
+            background: #f3e5f5;
+            font-family: Arial, sans-serif;
+            color: #4a235a;
+            margin: 0;
+        }
+
+        header {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #6c3483;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f5eef8;
+        }
+
+        section {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #8e44ad;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        button {
+            background: #8e44ad;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #6c3483;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #8e44ad;
+        }
+
+        footer {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body id="topo">
+
+    <header>
+        <h1>✨ Meu Blog sobre Enrolados ✨</h1>
+        <p>Bem-vindo ao meu blog sobre o filme Enrolados!</p>
+    </header>
+
+    <nav>
+        <a href="#filme">Sobre o filme</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#opiniao">Minha opinião</a>
+    </nav>
+
+    <section id="filme">
+        <h2>Sobre o filme</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Tangled_poster.jpg"
+             alt="Pôster do filme Enrolados">
+
+        <p>
+            Enrolados é um filme da Disney que conta a história de Rapunzel,
+            uma jovem que vive presa em uma torre.
+        </p>
+
+        <p>
+            Seu maior sonho é conhecer o mundo fora da torre
+            e descobrir novas aventuras.
+        </p>
+    </section>
+
+    <section>
+        <h2>Meu primeiro post</h2>
+
+        <p>
+            Enrolados é uma história divertida e emocionante,
+            que mostra a importância de ter coragem para seguir nossos sonhos.
+        </p>
+    </section>
+
+    <section id="personagens">
+        <h2>Personagens</h2>
+
+        <p>
+            <b>Rapunzel:</b> uma jovem curiosa, corajosa e sonhadora.
+        </p>
+
+        <p>
+            <b>Flynn Rider:</b> um aventureiro divertido que participa
+            da aventura de Rapunzel.
+        </p>
+
+        <p>
+            <b>Pascal:</b> o melhor amigo de Rapunzel e um camaleão muito fofo.
+        </p>
+    </section>
+
+    <section>
+        <h2>Rapunzel</h2>
+
+        <p>
+            Rapunzel é uma personagem curiosa, corajosa e sonhadora.
+            Seu maior desejo é conhecer o mundo fora da torre.
+        </p>
+    </section>
+
+    <section>
+        <h2>Flynn Rider</h2>
+
+        <p>
+            Flynn Rider é um aventureiro que acaba conhecendo Rapunzel
+            e participa de sua aventura.
+        </p>
+    </section>
+
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+
+        <ul>
+            <li>Rapunzel tem cabelos mágicos.</li>
+            <li>Pascal é um camaleão.</li>
+            <li>As lanternas aparecem durante a história.</li>
+            <li>Rapunzel sonha em conhecer o mundo.</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>✨ Galeria de Enrolados</h2>
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Tangled_poster.jpg"
+             alt="Enrolados">
+
+        <p>
+            Uma aventura cheia de sonhos, amizade e muita diversão!
+        </p>
+    </section>
+
+    <section id="opiniao">
+        <h2>Minha opinião</h2>
+
+        <p>
+            Eu gosto de Enrolados porque é uma história divertida,
+            emocionante e fala sobre a importância de seguir nossos sonhos.
+        </p>
+    </section>
+
+    <section>
+        <h2>💜 O que você achou?</h2>
+
+        <p>
+            Clique em um botão:
+        </p>
+
+        <button onclick="gostei()">
+            Gostei!
+        </button>
+
+        <button onclick="enviar()">
+            Enviar
+        </button>
+
+        <p id="mensagem"></p>
+    </section>
+
+    <section>
+        <h2>🏮 Mensagem final</h2>
+
+        <p>
+            Nunca desista dos seus sonhos.
+            Assim como Rapunzel, tenha coragem para
+            sair da sua zona de conforto e descobrir
+            novas aventuras!
+        </p>
+
+        <button onclick="voltarAoTopo()">
+            ⬆ Voltar ao topo
+        </button>
+    </section>
+
+    <footer>
+        <p>💜 Blog sobre Enrolados</p>
+        <p>Obrigada por visitar meu blog! ✨</p>
+    </footer>
+
+
+    <script>
+
+        function gostei() {
+            document.getElementById("mensagem").innerHTML =
+                "💜 Que bom que você gostou de Enrolados!";
+        }
+
+        function enviar() {
+            document.getElementById("mensagem").innerHTML =
+                "✨ Obrigado por visitar meu blog!";
+        }
+
+        function voltarAoTopo() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
